@@ -115,7 +115,7 @@ const TicTacToe = () => {
             </StyledBoard>
             <SOutput>
                 {winner === "draw" && <SMessage>Draw!</SMessage>}
-                {winner && winner !== "dPpPraw" && <SMessage>Winner is {winner}</SMessage>}
+                {winner && winner !== "draw" && <SMessage>Winner is {winner}</SMessage>}
                 {winner && <SButton onClick={restartHandler}>Restart</SButton>}
             </SOutput>
         </Wrapper>
